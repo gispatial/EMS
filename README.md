@@ -5,7 +5,10 @@
 
 The easiest way to get started is by using one of the project templates, which are made available. These plug into the standard dotnet new command and work on Windows, Mac in addition to Linux. To install the (Single Page Application)SPA templates, open the command prompt and run the command given below.
 
-dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+```sh
+$ dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+```
+
 
 To generate a new project, create an empty folder and name this project as EMS here. EMS is an abbreviation for Employee Management System. After creating an empty folder, now change the directory and go to this project. Now, run the command 
 
