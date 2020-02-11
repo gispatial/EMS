@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/crocslut/.dotnet/store/|arch|/|tfm|",
+      "/Users/crocslut/.nuget/packages"
+    ]
+  }
+}
