@@ -28,5 +28,5 @@ it will deploy to https://localhost:5001/
 ```
 # Screenshots
 <img src="https://github.com/gispatial/EMS/blob/master/home.png" width="100%">
-<img src="" width="100%">
-<img src="" width="100%">
+<img src="https://github.com/gispatial/EMS/blob/master/counter.png" width="100%">
+<img src="https://github.com/gispatial/EMS/blob/master/fetch_data.png" width="100%">
