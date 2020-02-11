@@ -11,10 +11,6 @@ To generate a new project, create an empty folder and name this project as EMS h
 
 
 ## Installation
-
-React-admin is available from npm. You can install it (and its required dependencies)
-using:
-
 ```sh
 $ dotnet new angular.
 
