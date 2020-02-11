@@ -23,10 +23,9 @@ $ dotnet restore
 $ npm install
 
 #code and open this project with Code Vs or Visual Studio
+
+it will deploy to https://localhost:5001/
 ```
-
-...
-
 # Screenshots
 <img src="" width="100%">
 <img src="" width="100%">
