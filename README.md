@@ -10,7 +10,7 @@ $ dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
 ```
 
 
-To generate a new project, create an empty folder and name this project as EMS here. EMS is an abbreviation for Employee Management System. For this project use case plase rename EMS folder to MMS(meeting management system) 
+To generate a new project, create an empty folder and name this project as EMS here. EMS is an abbreviation for Employee Management System. For this project use case please rename "EMS" to "MMS"(meeting management system)in your localhost environment...
 After mkdir new MMS empty folder, now change the directory and go to this project. Now, run the command 
 
 
