@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  meetings: any[] = [];
+  constructor(private apiService: ApiService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit() {
+		this.apiService.get('meetings').subscribe((data: any[])=>{  
+			console.log(data);  
+			this.meetings = data;  
+		})  
+	}
 }

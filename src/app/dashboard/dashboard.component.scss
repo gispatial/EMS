@@ -1,0 +1,16 @@
+#meeting-list {
+  padding: 15px;
+
+  .mat-card {
+    background: #fff;
+    color: #131313;
+  }
+
+  .spinner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

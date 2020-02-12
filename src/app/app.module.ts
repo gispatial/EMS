@@ -12,6 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatGridListModule } from '@angular/material/grid-list';
 
   @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
       MatIconModule,
       MatButtonModule,
       MatCardModule,
-      MatProgressSpinnerModule
+      MatProgressSpinnerModule,
+      MatGridListModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
