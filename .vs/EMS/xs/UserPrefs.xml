@@ -1,10 +1,38 @@
-﻿<Properties StartupConfiguration="{FF421CC9-F6CB-40A8-8917-64B3D94D5D6E}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{FF421CC9-F6CB-40A8-8917-64B3D94D5D6E}|MMS">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="../dotnet-sdk-latest-osx-x64.pkg.sha" Line="1" Column="1" />
+      <File FileName="ClientApp/src/index.html" />
+      <File FileName="ClientApp/src/main.ts" />
+      <File FileName="ClientApp/src/app/app.component.html" />
+      <File FileName="ClientApp/src/app/app.component.ts" />
+      <File FileName="ClientApp/src/app/app.module.ts" />
+      <File FileName="ClientApp/src/app/app.server.module.ts" />
+      <File FileName="ClientApp/src/app/home/home.component.html" />
+      <File FileName="ClientApp/src/app/home/home.component.ts" />
+      <File FileName="ClientApp/src/polyfills.ts" />
+      <File FileName="ClientApp/src/styles.css" />
+      <File FileName="Program.cs" Line="16" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EMS" expanded="True" selected="True">
-            <Node name="EMS" expanded="True" />
+          <Node name="EMS" expanded="True">
+            <Node name="EMS" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="home" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

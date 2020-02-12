@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "EMS": {
+    "MMS": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

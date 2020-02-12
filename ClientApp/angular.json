@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EMS": {
+    "MMS": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "EMS"
+  "defaultProject": "MMS"
 }
