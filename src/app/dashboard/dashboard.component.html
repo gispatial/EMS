@@ -5,6 +5,10 @@
 
   <div class="page-title">
     <h1>Meetings</h1>
+    <button mat-raised-button color="primary">
+      <mat-icon aria-hidden="false" aria-label="Example add icon">add</mat-icon>
+      New Meeting
+    </button>
   </div>
   <div *ngFor="let meeting of meetings">
     <mat-card  style="margin-top:10px;">
@@ -17,8 +21,13 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button color="primary">ATTEND</button>
-        <a mat-raised-button routerLink=".">SHARE</a>
+        <div class="actions">
+          <button mat-raised-button color="primary">ATTEND</button>
+          <a mat-raised-button routerLink=".">SHARE</a>
+        </div>
+        <div class="meeting-time">
+          {{meeting.datetime}}
+        </div>
       </mat-card-actions>
     </mat-card>
   </div>
