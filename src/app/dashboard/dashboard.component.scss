@@ -1,9 +1,28 @@
 #meeting-list {
   padding: 15px;
+  .page-title {
+    margin: 80px 0;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  @media only screen and (min-width: 767px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .mat-card {
     background: #fff;
     color: #131313;
+    border: 1px solid #131313;
+
+    .mat-card-title {
+      margin-left: -15px;
+    }
+
+    .mat-card-actions {
+      margin: 0;
+    }
   }
 
   .spinner {
