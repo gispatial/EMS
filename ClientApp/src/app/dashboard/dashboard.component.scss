@@ -1,0 +1,46 @@
+#meeting-list {
+  padding: 15px;
+  .page-title {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  @media only screen and (min-width: 767px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mat-card {
+    background: #fff;
+    color: #131313;
+    border: 1px solid #131313;
+
+    .mat-card-title {
+      margin-left: -15px;
+    }
+
+    .mat-card-actions {
+      margin: 0;
+    }
+
+    .mat-card-actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  .spinner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
