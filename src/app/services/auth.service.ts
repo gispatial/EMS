@@ -16,8 +16,12 @@ export class AuthService {
     return JSON.parse(localStorage.getItem('current_user'))
   }
 
-  public setCurrentSession(data) {
+  public setCurrentSession(data: any) {
     localStorage.setItem('current_user', JSON.stringify(data))
+  }
+
+  public clearCurrentSession() {
+    localStorage.setItem('current_user', null)
   }
 
   public isAuthenticated(): boolean {

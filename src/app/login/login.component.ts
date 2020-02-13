@@ -18,9 +18,6 @@ export class LoginComponent implements OnInit {
     private apiService: ApiService,
     private authService: AuthService,
   ) {
-    const user = authService.getCurrentSession();
-    console.log('current_user', user);
-    
     this.loginForm = this.formBuilder.group({
       email: new FormControl('partner@example.com', [Validators.required]),
       password: new FormControl('123456', [Validators.required, Validators.minLength(6)])
@@ -34,7 +31,6 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.status === 'INVALID') return
     this.apiService.post('users', this.loginForm.value)
       .subscribe((data)=>{  
-        console.log(data);
         this.authService.setCurrentSession(data);
         this.loginForm.reset();
         this.router.navigate(['/dashboard']);

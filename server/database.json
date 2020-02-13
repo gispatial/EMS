@@ -289,6 +289,61 @@
       "email": "partner@example.com",
       "password": "123456",
       "id": 26
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 27
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 28
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 29
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 30
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 31
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 32
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 33
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 34
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 35
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 36
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 37
     }
   ]
 }
