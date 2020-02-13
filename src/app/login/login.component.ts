@@ -3,20 +3,20 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-add-meeting',
-  templateUrl: './add-meeting.component.html',
-  styleUrls: ['./add-meeting.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class AddMeetingComponent implements OnInit {
-  newMeetingForm: any;
+export class LoginComponent implements OnInit {
+  loginForm: any;
 
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
   ) {
-    this.newMeetingForm = this.formBuilder.group({
-      subject: '',
-      description: ''
+    this.loginForm = this.formBuilder.group({
+      email: '',
+      password: ''
     });
   }
 
@@ -24,12 +24,12 @@ export class AddMeetingComponent implements OnInit {
   }
 
   onSubmit(data: Object) {
-    this.newMeetingForm.reset();
+    this.loginForm.reset();
     this.router.navigate(['/dashboard']);
   }
 
   onCancel() {
-    this.newMeetingForm.reset();
+    this.loginForm.reset();
     this.router.navigate(['/dashboard']);
   }
 }
