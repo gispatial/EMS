@@ -3,7 +3,7 @@
     <h1>Add New Meeting</h1>
   </div>
   <div>
-    <form [formGroup]="newMeetingForm" (ngSubmit)="onSubmit(newMeetingForm.value)" style="width: 100%;">
+    <form [formGroup]="newMeetingForm" (ngSubmit)="onSubmit()" style="width: 100%;">
       <mat-form-field appearance="fill">
         <mat-label>Subject</mat-label>
         <input matInput formControlName="subject">
@@ -17,7 +17,7 @@
       <mat-form-field appearance="fill">
         <mat-label>Select Attendee</mat-label>
         <mat-select>
-          <mat-option value="option">Option</mat-option>
+          <mat-option *ngFor="let attendee of attendees" value="attendee.id">{{attendee.name}}</mat-option>
         </mat-select>
       </mat-form-field>
       <br>

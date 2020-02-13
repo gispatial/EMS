@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit(data: Object) {
     if (this.loginForm.status === 'INVALID') return
-    this.apiService.post('users', this.loginForm.value)
+    this.apiService.post('sessions', this.loginForm.value)
       .subscribe((data)=>{  
         this.authService.setCurrentSession(data);
         this.loginForm.reset();
