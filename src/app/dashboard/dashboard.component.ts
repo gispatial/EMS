@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-		this.apiService.get('meetings').subscribe((data: any[])=>{  
+		this.apiService.get('meetings').subscribe((data: any)=>{  
 			console.log(data);  
 			this.meetings = data;  
 		})  

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from "@angular/router";
+import { ApiService } from '../services/api.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,10 +15,15 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
+    private apiService: ApiService,
+    private authService: AuthService,
   ) {
+    const user = authService.getCurrentSession();
+    console.log('current_user', user);
+    
     this.loginForm = this.formBuilder.group({
-      email: new FormControl('', [Validators.required]),
-      password: new FormControl('', [Validators.required, Validators.minLength(6)])
+      email: new FormControl('partner@example.com', [Validators.required]),
+      password: new FormControl('123456', [Validators.required, Validators.minLength(6)])
     });
   }
 
@@ -24,9 +31,14 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(data: Object) {
-    // this.loginForm.reset();
-    console.log(this.loginForm.controls['email'].touched)
-    this.router.navigate(['/dashboard']);
+    if (this.loginForm.status === 'INVALID') return
+    this.apiService.post('users', this.loginForm.value)
+      .subscribe((data)=>{  
+        console.log(data);
+        this.authService.setCurrentSession(data);
+        this.loginForm.reset();
+        this.router.navigate(['/dashboard']);
+      })
   }
 
   onCancel() {

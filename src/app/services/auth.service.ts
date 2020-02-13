@@ -13,11 +13,11 @@ export class AuthService {
   constructor() { }
 
   public getCurrentSession(): Session {
-    return null;
-    return {
-      id: '1',
-      email: 'test@example.com',
-    }
+    return JSON.parse(localStorage.getItem('current_user'))
+  }
+
+  public setCurrentSession(data) {
+    localStorage.setItem('current_user', JSON.stringify(data))
   }
 
   public isAuthenticated(): boolean {
