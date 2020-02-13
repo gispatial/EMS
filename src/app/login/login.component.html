@@ -8,11 +8,27 @@
         <mat-label>Email</mat-label>
         <input matInput formControlName="email">
       </mat-form-field>
+      <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched" class="alert alert-danger">
+        <div *ngIf="loginForm.controls['email'].errors.required">
+          Email is required.
+        </div>
+        <div *ngIf="loginForm.controls['email'].errors.forbiddenemail">
+          Email cannot be Bob.
+        </div>
+      </div>
       <br>
       <mat-form-field appearance="fill">
         <mat-label>Password</mat-label>
         <textarea matInput formControlName="password"></textarea>
       </mat-form-field>
+      <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched" class="alert alert-danger">
+        <div *ngIf="loginForm.controls['password'].errors.required">
+          Password is required.
+        </div>
+        <div *ngIf="loginForm.controls['password'].errors.minlength">
+          Password must be at least 6 characters long.
+        </div>
+      </div>
       <br>
       <div class="submit-btn-container">
         <button mat-raised-button color="primary" class="button" type="submit">Login</button>

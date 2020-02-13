@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from "@angular/router";
 
 @Component({
@@ -15,8 +15,8 @@ export class LoginComponent implements OnInit {
     private router: Router,
   ) {
     this.loginForm = this.formBuilder.group({
-      email: '',
-      password: ''
+      email: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6)])
     });
   }
 
@@ -24,7 +24,8 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(data: Object) {
-    this.loginForm.reset();
+    // this.loginForm.reset();
+    console.log(this.loginForm.controls['email'].touched)
     this.router.navigate(['/dashboard']);
   }
 
