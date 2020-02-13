@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AddMeetingComponent } from './add-meeting/add-meeting.component';
 
   @NgModule({
@@ -45,6 +46,7 @@ import { AddMeetingComponent } from './add-meeting/add-meeting.component';
       MatFormFieldModule,
       MatSelectModule,
       MatInputModule,
+      MatDatepickerModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

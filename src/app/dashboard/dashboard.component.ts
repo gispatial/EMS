@@ -8,12 +8,19 @@ import { ApiService } from '../services/api.service';
 })
 export class DashboardComponent implements OnInit {
   meetings: any[] = [];
-  constructor(private apiService: ApiService) { }
+  allUsers: any[] = [];
+
+  constructor(private apiService: ApiService) {
+    this.apiService.get('users')
+      .subscribe((data: any) => {
+        this.allUsers = data;
+      })
+  }
 
   ngOnInit() {
-		this.apiService.get('meetings').subscribe((data: any)=>{  
-			console.log(data);  
-			this.meetings = data;  
-		})  
+    this.apiService.get('meetings')
+      .subscribe((data: any) => {  
+        this.meetings = data;
+      })  
 	}
 }

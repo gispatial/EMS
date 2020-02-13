@@ -11,7 +11,6 @@ import { ApiService } from '../services/api.service';
 export class AddMeetingComponent implements OnInit {
   newMeetingForm: any;
   allUsers: any[] = [];
-  selectedAttendees: any[] = [];
 
   constructor(
     private formBuilder: FormBuilder,
