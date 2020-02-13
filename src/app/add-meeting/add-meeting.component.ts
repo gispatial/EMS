@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-add-meeting',
@@ -11,6 +12,7 @@ export class AddMeetingComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
+    private router: Router,
   ) {
     this.newMeetingForm = this.formBuilder.group({
       subject: '',
@@ -24,6 +26,12 @@ export class AddMeetingComponent implements OnInit {
   onSubmit(data: Object) {
     console.warn('Your order has been submitted', data);
     this.newMeetingForm.reset();
+    this.router.navigate(['/dashboard']);
+
   }
 
+  onCancel() {
+    this.newMeetingForm.reset();
+    this.router.navigate(['/dashboard']);
+  }
 }
