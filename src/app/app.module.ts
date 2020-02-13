@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,15 +15,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { AddMeetingComponent } from './add-meeting/add-meeting.component';
 
   @NgModule({
     declarations: [
       AppComponent,
       DashboardComponent,
-      AboutComponent
+      AboutComponent,
+      AddMeetingComponent
     ],
     imports: [
       BrowserModule,
+      ReactiveFormsModule,
       AppRoutingModule,
       HttpClientModule,
       BrowserAnimationsModule,
@@ -33,6 +40,9 @@ import { MatListModule } from '@angular/material/list';
       MatProgressSpinnerModule,
       MatGridListModule,
       MatListModule,
+      MatFormFieldModule,
+      MatSelectModule,
+      MatInputModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

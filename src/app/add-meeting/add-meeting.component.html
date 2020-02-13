@@ -1,0 +1,30 @@
+<div id="add-meeting" style="padding: 15px;">
+  <div class="page-title">
+    <h1>Add New Meeting</h1>
+  </div>
+  <div>
+    <form [formGroup]="newMeetingForm" (ngSubmit)="onSubmit(newMeetingForm.value)" style="width: 100%;">
+      <mat-form-field appearance="fill">
+        <mat-label>Subject</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Agenda</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Select Attendee</mat-label>
+        <mat-select>
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <div class="submit-btn-container">
+        <a mat-raised-button routerLink=".">CANCEL</a>
+        <button mat-raised-button color="primary" class="button" type="submit">SAVE</button>
+      </div>
+    </form>
+  </div>
+</div>
