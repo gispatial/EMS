@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from "@angular/router";
 import { ApiService } from '../services/api.service';
 
@@ -10,7 +10,8 @@ import { ApiService } from '../services/api.service';
 })
 export class AddMeetingComponent implements OnInit {
   newMeetingForm: any;
-  attendees: any[] = [];
+  allUsers: any[] = [];
+  selectedAttendees: any[] = [];
 
   constructor(
     private formBuilder: FormBuilder,
@@ -18,13 +19,13 @@ export class AddMeetingComponent implements OnInit {
     private apiService: ApiService,
   ) {
     this.newMeetingForm = this.formBuilder.group({
-      subject: '',
+      subject: new FormControl('', [Validators.required]),
       description: '',
       attendees: [],
     });
     this.apiService.get('users')
       .subscribe((data: any) => {
-        this.attendees = data;
+        this.allUsers = data;
       })
   }
 

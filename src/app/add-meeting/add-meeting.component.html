@@ -16,8 +16,8 @@
       <br>
       <mat-form-field appearance="fill">
         <mat-label>Select Attendee</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let attendee of attendees" value="attendee.id">{{attendee.name}}</mat-option>
+        <mat-select formControlName="attendees" multiple matNativeControl>
+          <mat-option *ngFor="let user of allUsers" [value]="user.id">{{user.name}}</mat-option>
         </mat-select>
       </mat-form-field>
       <br>
