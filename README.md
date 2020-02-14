@@ -78,6 +78,12 @@ $ npm install
 #code and open this project with Code Vs or Visual Studio
 
 it will deploy to https://localhost:5001/
+
+#to start client server
+Navigate or $ cd ClientApp 
+#run
+npm run server
+To start a mock server
 ```
 # Screenshots
 <img src="https://github.com/gispatial/EMS/blob/master/Screenshot%202020-02-14%20at%203.33.19%20PM.png" width="50%">
