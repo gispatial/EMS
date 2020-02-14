@@ -51,8 +51,6 @@ Version: 11
 
 Mac OS X 10.14.6
 Darwin 18.7.0 Darwin Kernel Version 18.7.0
-    Thu Jan 23 06:52:12 PST 2020
-    root:xnu-4903.278.25~1/RELEASE_X86_64 x86_64
     
 === Project Stacks ===
 
