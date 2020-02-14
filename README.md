@@ -53,18 +53,14 @@ Mac OS X 10.14.6
 Darwin 18.7.0 Darwin Kernel Version 18.7.0
     Thu Jan 23 06:52:12 PST 2020
     root:xnu-4903.278.25~1/RELEASE_X86_64 x86_64
+    
+=== Project Stacks ===
 
 Angular CLI: 9.0.2 (latest)
 Node: 12.14.1
+psql (PostgreSQL) 12.1
 Entity Framework
 .Net Web API
-PostgreSQL
-# Getting started
-
-The easiest way to get started is by using one of the project templates, which are made available. These plug into the standard dotnet new command and work on Windows, Mac in addition to Linux. To install the (Single Page Application)SPA templates, open the command prompt and run the command given below.
-
-```sh
-$ dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
 ```
 To generate a new project, create an empty folder and name this project as EMS. EMS is an abbreviation for Employee Management System. For this project use case please rename "EMS" to "MMS"(meeting management system)inside your localhost environment...
 After mkdir new MMS empty folder, now change the directory and go to this project. Now, run the command 
