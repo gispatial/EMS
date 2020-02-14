@@ -1,5 +1,5 @@
 # MMS - Meeting Management System
-  with Angular Bootstrap & Entity Framework
+  with Angular / Bootstrap / DotNet Web API & Entity Framework
 # Stack Details:
 ```
 === Visual Studio Community 2019 for Mac ===
