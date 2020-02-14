@@ -80,9 +80,10 @@ $ npm install
 it will deploy to https://localhost:5001/
 
 #to start client server
-Navigate or $ cd ClientApp 
+Navigate to ClientApp Folder
+or $ cd ClientApp 
 #run
-npm run server
+$ npm run server
 To start a mock server
 ```
 # Screenshots
