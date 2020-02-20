@@ -17,5 +17,9 @@ export class ApiService {
   
   public post(url: String = null, data: any = {}) {   
 		return this.httpClient.post(`${this.SERVER_URL}/${url}`, data);
+  }
+  
+  public put(url: String = null, data: any = {}) {   
+		return this.httpClient.put(`${this.SERVER_URL}/${url}`, data);
 	}
 }

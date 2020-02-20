@@ -11,6 +11,7 @@ import { ApiService } from '../services/api.service';
 export class EditMeetingComponent implements OnInit {
   editMeetingForm: any;
   allUsers: any[] = [];
+  meetingId: Number = null;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -23,8 +24,8 @@ export class EditMeetingComponent implements OnInit {
       description: null,
       attendees: [],
     });
-    const meetingId = this.route.snapshot.params['id'];
-    this.apiService.get('meetings/'+meetingId)
+    this.meetingId = this.route.snapshot.params['id'];
+    this.apiService.get('meetings/'+this.meetingId)
       .subscribe((data: any) => {
         this.editMeetingForm.setValue({
           subject: data.subject,
@@ -44,7 +45,7 @@ export class EditMeetingComponent implements OnInit {
 
   onSubmit() {
     if (this.editMeetingForm.status === 'INVALID') return
-    this.apiService.post('meetings', this.editMeetingForm.value)
+    this.apiService.put('meetings/'+this.meetingId, this.editMeetingForm.value)
       .subscribe((data) => {  
         this.editMeetingForm.reset();
         this.router.navigate(['/dashboard']);

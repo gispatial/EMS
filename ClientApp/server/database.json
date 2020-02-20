@@ -1,22 +1,12 @@
 {
   "meetings": [
     {
-      "id": 1,
-      "subject": "Inventore voluptas quos ducimus fugit accusamus praesentium impedit.",
-      "datetime": "2020-08-24T11:04:49.815Z",
+      "subject": "Inventore voluptas quos ducimus fugit accusamus praesentium impedit.11",
       "description": "Ut quia quia repellat sed. Autem ea possimus in delectus rem eum qui dolorem. Quis aliquam et voluptatum molestias. Officiis dolorem asperiores ut asperiores molestiae et distinctio consectetur non. In nostrum ut iusto sed sit. Tempore sapiente facere.",
-      "imageUrl": "https://source.unsplash.com/1600x900",
       "attendees": [
-        6,
-        8,
-        6,
-        9,
-        4,
-        7,
-        7,
-        2,
-        5
-      ]
+        2
+      ],
+      "id": 1
     },
     {
       "id": 2,
@@ -173,7 +163,7 @@
     },
     {
       "subject": "Non perspiciatis ullam 11",
-      "description": "Iure repellendus at a ab adipisci ullam culpa nam. Eaque enim corporis accusamus voluptatem temporibus non enim inventore.",
+      "description": "Iure repellendus at a ab adipisci ullam culpa nam. Eaque enim corporis accusamus voluptatem temporibus non enim inventore. cool",
       "attendees": [
         9,
         10,
