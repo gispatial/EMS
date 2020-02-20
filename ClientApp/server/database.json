@@ -4,28 +4,26 @@
       "subject": "Inventore voluptas quos ducimus fugit accusamus praesentium impedit.11",
       "description": "Ut quia quia repellat sed. Autem ea possimus in delectus rem eum qui dolorem. Quis aliquam et voluptatum molestias. Officiis dolorem asperiores ut asperiores molestiae et distinctio consectetur non. In nostrum ut iusto sed sit. Tempore sapiente facere.",
       "attendees": [
-        2
+        2,
+        5
       ],
+      "datetime": "2020-02-28T19:00:00.000Z",
       "id": 1
     },
     {
-      "id": 2,
       "subject": "Molestiae cupiditate necessitatibus qui asperiores.",
-      "datetime": "2021-01-19T20:23:49.641Z",
       "description": "Inventore consequatur veritatis reiciendis officiis. Reprehenderit sit dolore nihil quis est vero fuga. Aspernatur repellat est sapiente vitae. Ad a sapiente ad aut. Sit deserunt dicta architecto autem eum. Recusandae at eos rerum nemo ratione.",
-      "imageUrl": "https://source.unsplash.com/1600x900",
       "attendees": [
         3,
         3,
         8
-      ]
+      ],
+      "datetime": "2021-01-19T20:23:49.641Z",
+      "id": 2
     },
     {
-      "id": 3,
       "subject": "Non perspiciatis ullam.",
-      "datetime": "2020-10-07T02:44:02.290Z",
       "description": "Iure repellendus at a ab adipisci ullam culpa nam. Eaque enim corporis accusamus voluptatem temporibus non enim inventore.",
-      "imageUrl": "https://source.unsplash.com/1600x900",
       "attendees": [
         9,
         10,
@@ -33,14 +31,13 @@
         4,
         9,
         6
-      ]
+      ],
+      "datetime": "2020-10-07T02:44:02.290Z",
+      "id": 3
     },
     {
-      "id": 4,
       "subject": "Ut molestias voluptatem assumenda accusamus voluptatem labore.",
-      "datetime": "2020-07-17T07:23:16.470Z",
       "description": "Accusamus eaque delectus culpa omnis. Numquam delectus possimus in. At dolorem nihil autem. Similique quia harum consectetur dolorem sint voluptas sunt. Asperiores tenetur tempore.",
-      "imageUrl": "https://source.unsplash.com/1600x900",
       "attendees": [
         2,
         10,
@@ -52,7 +49,9 @@
         1,
         10,
         7
-      ]
+      ],
+      "datetime": "2020-07-17T07:23:16.470Z",
+      "id": 4
     },
     {
       "id": 5,
@@ -150,6 +149,7 @@
         3,
         5
       ],
+      "datetime": "2020-02-20T11:30:50.334Z",
       "id": 11
     },
     {
@@ -159,6 +159,7 @@
         4,
         5
       ],
+      "datetime": "2020-02-20T11:30:42.147Z",
       "id": 12
     },
     {
@@ -172,7 +173,17 @@
         9,
         6
       ],
+      "datetime": "2020-02-20T11:30:46.623Z",
       "id": 13
+    },
+    {
+      "subject": "partner",
+      "description": "",
+      "attendees": [
+        6
+      ],
+      "datetime": "2020-02-20T11:32:01.681Z",
+      "id": 14
     }
   ],
   "users": [

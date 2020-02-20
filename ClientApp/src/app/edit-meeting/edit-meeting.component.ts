@@ -23,6 +23,7 @@ export class EditMeetingComponent implements OnInit {
       subject: new FormControl(null, [Validators.required]),
       description: null,
       attendees: [],
+      datetime: null,
     });
     this.meetingId = this.route.snapshot.params['id'];
     this.apiService.get('meetings/'+this.meetingId)
@@ -31,6 +32,7 @@ export class EditMeetingComponent implements OnInit {
           subject: data.subject,
           description: data.description,
           attendees: data.attendees,
+          datetime: data.datetime || new Date(),
         });
       })
     

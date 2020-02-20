@@ -21,6 +21,7 @@ export class AddMeetingComponent implements OnInit {
       subject: new FormControl('', [Validators.required]),
       description: '',
       attendees: [],
+      datetime: new Date(),
     });
     this.apiService.get('users')
       .subscribe((data: any) => {
