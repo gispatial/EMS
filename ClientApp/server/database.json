@@ -161,6 +161,28 @@
         5
       ],
       "id": 11
+    },
+    {
+      "subject": "hello",
+      "description": "why",
+      "attendees": [
+        4,
+        5
+      ],
+      "id": 12
+    },
+    {
+      "subject": "Non perspiciatis ullam 11",
+      "description": "Iure repellendus at a ab adipisci ullam culpa nam. Eaque enim corporis accusamus voluptatem temporibus non enim inventore.",
+      "attendees": [
+        9,
+        10,
+        9,
+        4,
+        9,
+        6
+      ],
+      "id": 13
     }
   ],
   "users": [
@@ -230,6 +252,16 @@
       "email": "partner@example.com",
       "password": "123456",
       "id": 1
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 3
     }
   ]
 }

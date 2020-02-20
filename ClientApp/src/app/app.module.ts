@@ -21,6 +21,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AddMeetingComponent } from './add-meeting/add-meeting.component';
+import { EditMeetingComponent } from './edit-meeting/edit-meeting.component';
 
   @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { AddMeetingComponent } from './add-meeting/add-meeting.component';
       DashboardComponent,
       AboutComponent,
       AddMeetingComponent,
+      EditMeetingComponent,
       SecureComponent,
     ],
     imports: [
