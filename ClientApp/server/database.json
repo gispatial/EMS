@@ -263,6 +263,16 @@
       "email": "partner@example.com",
       "password": "123456",
       "id": 3
+    },
+    {
+      "email": "partner@example.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "email": "user@example.com",
+      "password": "123456",
+      "id": 5
     }
   ]
 }

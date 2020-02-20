@@ -5,7 +5,7 @@
       <button mat-button routerLink="/about">About</button>
     </div>
     <div class="right-nav">
-      <span class="user-email">{{'user@example.com'}}</span>
+      <span class="user-email">{{currentUser.email}}</span>
       <a mat-button (click)="onLogout()">Logout</a>
     </div>
 
